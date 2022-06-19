@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>表单</title>
+</head>
+<body>
+	<p>文本框输入表单</p>
+	<form>
+		First Name:
+		<br/>
+		<input type="text" name="firstname"/>
+		<br/>
+		Last Name
+		<br/>
+		<input type="text" name="lastname">
+	</form>
+	<p>单选框输入表单</p>
+	<form>
+		Male:
+		<input type="radio" name="gender" value="male"/>
+		<br/>
+		Female:
+		<input type="radio" name="gender" value="female" checked/>
+	</form>
+	<p>包含提交按钮、method属性和提交属性的输入表单，提交时name属性是必须的</p>
+	<form action="xxx" method="POST">
+		First Name:
+		<br/>
+		<input type="text" name="firstname"/>
+		<br/>
+		Last Name
+		<br/>
+		<input type="text" name="lastname">
+		<br/>
+		<input type="button" name="submit" value="Submit"/>
+	</form>
+	<p>拥有完整form属性并且使用fieldset元素组合表单数据的表单</p>
+	<form action="xxx" method="POST" target="_blank" accept-charset="utf-8" ectype="application/x-www-form-urlexcoded" autocomplete="off" novalidate>
+		<fieldset>
+			<legend>Your Name</legend>
+			First Name:
+			<br/>
+			<input type="text" name="firstname" value="Chadwin"/>
+			<br/>
+			Last Name:
+			<br/>
+			<input type="text" name="lastname" value="Sean">
+		</fieldset>
+		<fieldset>
+			<legend>Your Gender</legend>
+			Male:
+			<input type="radio" name="gender" value="male"/>
+			<br/>
+			Female:
+			<input type="radio" name="gender" value="female" checked/>
+			<br/>
+			<input type="button" name="submit" value="Submit"/>
+		</fieldset>
+	</form>
+	<p>包含下拉列表、文本域、input预定义选项列表、带动作按钮的表单</p>
+	<form action="xxx">
+		<fieldset>
+			<legend>Persional Information</legend>
+			First Name:
+			<br/>
+			<input type="text" name="firstname" value="Chadwin"/>
+			<br/>
+			Last Name:
+			<br/>
+			<input type="text" name="lastname" value="Sean">
+			<br/>
+			Your Car:
+			<br/>
+			<select name="car">
+				<option value="bmw">BMW</option>
+				<option value="audi" selected>Audi</option>
+				<option value="benz">Benz</option>
+				<option value="tesla">Tesla</option>
+			</select>
+			<br/>
+			Your Life Experience:
+			<br/>
+			<textarea name="lifeexperience" rows="10" cols="30">What is special in your life?</textarea>
+			<br/>
+			Your Web Browser:
+			<input name="browser" list="browserlist">
+			<datalist id="browserlist">
+				<option value="Internet Explorer">
+			    <option value="Firefox">
+			    <option value="Chrome">
+			    <option value="Opera">
+			    <option value="Safari">
+			</datalist>
+			<br/>
+			<button type="button" onclick="alert('Hi there!');">Submit</button>
+		</fieldset>
+	</form>
+	<p>包含多种输入类型和多种输入属性的表单</p>
+	<form action="xxx">
+		<fieldset>
+			<legend>Information</legend>
+			User Name:<input type="text" name="username" size="16" autocomplete="on"><br>
+			User Password:<input type="password" name="userpassword" maxlength="16"><br>
+			First Name:<input type="text" name="firstname" value="Chadwin" readonly/><br/>
+			Last Name:<input type="text" name="lastname" value="Sean" readonly><br/>
+			Gender:<br>
+			Male:<input type="radio" name="gender" value="male"/><br/>
+			Female:<input type="radio" name="gender" value="female" checked/><br/>
+			Vehicle:<br>
+			<input type="checkbox" name="vehicle" value="Car">I have a car<br>
+			<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+			Vehicle Amount:<input type="number" name="vehicleamount" min="0" max="1000"><br>
+			Birthday:<input type="date" name="birthday" max="2022-06-17"><br>
+			Favarate Color:<input type="color" name="favoratecolor"><br>
+			Annual Income:<input type="range" name="income" min="0" max="10000000" disabled><br>
+			E-mail:<input type="email" name="email"><br>
+			Homepage:<input type="url" name="homepage" autofocus><br>
+			<input type="submit" name="submit" value="Submit"><br>
+			<input type="button" name="abutton" onclick="alert('hello button');" value="Click Me!"><br>
+		</fieldset>
+	</form>
+</body>
+</html>

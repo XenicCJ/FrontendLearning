@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>块与内联</title>
+</head>
+<body>
+	<hr>
+
+	<h2>块元素</h2>
+	<p>大多数 HTML 元素被定义为块级元素或内联元素。块级元素在浏览器显示时，通常会以新行来开始（和结束）。例子：h1, p, ul, table</p>
+	<hr>
+
+	<h2>内联元素</h2>
+	<p>内联元素在显示时通常不会以新行开始。例子：b, td, a ,img</p>
+	<hr>
+
+	<h2>div与span</h2>
+	<p>HTML div元素是块级元素，它是可用于组合其他 HTML 元素的容器。div 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。如果与 CSS 一同使用，div 元素可用于对大的内容块设置样式属性。div元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 table 元素进行文档布局不是表格的正确用法。table>元素的作用是显示表格化的数据。</p>
+	<p>HTML span 元素是内联元素，可用作文本的容器。span 元素也没有特定的含义。当与 CSS 一同使用时，span 元素可用于为部分文本设置样式属性</p>
+
+	<div style='height: 200;background-color: #EFEFEF;'>
+		<p>这是一个包含在div块元素内的段落</p>
+		<span style="color: red">这是一个包含在span行级元素内的文本</span>
+	</div>
+</body>
+</html>

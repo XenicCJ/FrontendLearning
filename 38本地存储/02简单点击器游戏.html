@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>简单点击器</title>
+	<script type="text/javascript">
+		function counter(){
+			if(sessionStorage.counter){
+				sessionStorage.counter=Number(sessionStorage.counter)+1;
+			}else{
+				sessionStorage.counter=1;
+			}
+
+			if(Number(sessionStorage.counter)%10==0){
+				alert("嘉然来啦");	
+			}
+		}
+	</script>
+</head>
+<body>
+	<button id="button" onclick="counter()">点我10下有惊喜</button>
+</body>
+</html>

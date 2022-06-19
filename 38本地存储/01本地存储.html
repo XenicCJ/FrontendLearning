@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 使用本地存储来存储和获取用户指定的数据，有保存和获取两种方式 -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>本地存储</title>
+
+	<script type="text/javascript">
+		function save(){
+			var savekey=document.getElementById("savekey").value;
+			var savedata=document.getElementById("savedata").value;
+			localStorage.setItem(savekey,savedata);
+		}
+
+		function select(){
+			var selectkey=document.getElementById("selectkey").value;
+			var selectdata=localStorage.getItem(selectkey);
+			document.getElementById("selectdata").value=selectdata;
+		}
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend>保存数据</legend>
+		键值：<input type="text" name="savekey" id="savekey"><br>
+		数据：<input type="text" name="savedata" id="savedata"><br>
+		<button onclick="save()">保存</button>
+	</fieldset>
+	<fieldset>
+		<legend>查询数据</legend>
+		键值：<input type="text" name="selectkey" id="selectkey"><br>
+		数据：<input type="text" name="selectdata" id="selectdata"><br>
+		<button onclick="select()">查询</button>
+	</fieldset>
+	<fieldset>
+		<legend>查询数据</legend>
+		键值：<input type="text" name="selectkey" id="selectkey"><br>
+		数据：<input type="text" name="selectdata" id="selectdata"><br>
+		<button onclick="select()">查询</button>
+	</fieldset>
+</body>
+</html>

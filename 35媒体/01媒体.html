@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>媒体</title>
+</head>
+<body>
+	<!-- 分别使用object和embed元素显示文档和图片 -->
+	<object border="1px" width="500px" height="100px" data="../01简介/01实例.html"></object>
+	<embed width="500px" height="100px" src="../01简介/01实例.html"></embed>
+	<object border="1px" width="500px" height="100px" data="../resource/img/rabbit.jpg"></object>
+	<embed width="500px" height="100px" src="../resource/img/rabbit.jpg"></embed>
+
+	<!-- 使用object、embed和audio元素播放音频 -->
+	<object height="100" width="200" data="../resource/audio/thunder.mp3"></object>
+	<embed height="100" width="200" src="../resource/audio/thunder.mp3"></embed>
+	<audio controls="controls">
+		<source src="../resource/audio/thunder.mp3" type="audio/mp3">
+	</audio>
+
+	<!-- 使用雅虎媒体播放器播放音频 -->
+	<a href="../resource/audio/thunder.mp3">播放音频</a>
+	<script type="text/javascript" scr="http://mediaplayer.yahoo.com/js"></script>
+
+	<!-- 使用embed标签播放视频 -->
+	<embed src="../resource/vedio/what.mp4" width="200" height="200"></embed>
+	<!-- video标签 -->
+	<video width="200" height="200" controls="controls">
+		<source src="../resource/vedio/what.mp4" type="video/mp4">
+	</video>
+
+	<!-- b站视频外链 -->
+	<iframe height=“500” width=“500” src="//player.bilibili.com/player.html?bvid=BV1xY4y1h7yG&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+</body>
+</html>

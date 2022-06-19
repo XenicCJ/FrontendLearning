@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>地理定位</title>
+</head>
+<body>
+	<p id="geoInfo">您的地理位置是：</p>
+	<button onclick="getLocation()">试一下</button>
+
+	<script type="text/javascript">
+		var geoInfoP=document.getElementById("geoInfo");
+
+		function getLocation(){
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(showPosition,showError);
+			}else{
+				geoInfoP.innerHTML="本浏览器不支持地理定位";
+			}
+		}
+
+		function showPosition(position){
+			geoInfoP.innerHTML="纬度："+position.coords.latitude+"<br/>经度："+position.coords.longitude;
+		}
+
+		function showError(error)
+		{
+		  switch(error.code) 
+		    {
+		    case error.PERMISSION_DENIED:
+		      geoInfoP.innerHTML="User denied the request for Geolocation."
+		      break;
+		    case error.POSITION_UNAVAILABLE:
+		      geoInfoP.innerHTML="Location information is unavailable."
+		      break;
+		    case error.TIMEOUT:
+		      geoInfoP.innerHTML="The request to get user location timed out."
+		      break;
+		    case error.UNKNOWN_ERROR:
+		      geoInfoP.innerHTML="An unknown error occurred."
+		      break;
+		    }
+		}
+	</script>
+</body>
+</html>

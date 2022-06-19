@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>跨行跨列的单元格</title>
+</head>
+<body>
+	<h5>包含横跨两列的单元格</h5>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th colspan="2">联系方式</th>
+		</tr>
+		<tr>
+			<td>刘德华</td>
+			<td>123456789</td>
+			<td>北京中关村</td>
+		</tr>
+	</table>
+
+	<h5>包含横跨两行的单元格</h5>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th>联系方式</th>
+		</tr>
+		<tr>
+			<td rowspan="2">刘德华</td>
+			<td>123456789</td>
+		</tr>
+		<tr>
+			<td>北京中关村</td>
+		</tr>
+	</table>
+
+	<h5>同时包含横跨两行两列的单元格</h5>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th colspan="2">联系方式</th>
+		</tr>
+		<tr>
+			<td rowspan="2">刘德华</td>
+			<td>123456789</td>
+			<td>北京中关村</td>
+		</tr>
+		<tr>
+			<td>999999999</td>
+			<td>杭州西湖</td>
+		</tr>
+	</table>
+
+	<h5>包含一个横跨两行两列的单元格</h5>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th colspan="2">联系方式</th>
+			<th>另一些信息</th>
+		</tr>
+		<tr>
+			<td rowspan="2">刘德华</td>
+			<td rowspan="2" colspan="2">123456789</td>
+			<td>备注信息</td>
+		</tr>
+		<tr>
+			<td>另一些信息</td>
+		</tr>
+		<tr>
+			<td>李白</td>
+			<td>李白的联系方式</td>
+			<td>李白的诗</td>
+			<td>李白的画</td>
+		</tr>
+	</table>
+</body>
+</html>

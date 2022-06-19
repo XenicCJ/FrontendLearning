@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>定义</title>
+</head>
+<body>
+	<p>如果设置了dfn元素的title属性，则定义项目</p>
+	<p><dfn title="World Health Organization">WHO</dfn>成立于1948年。</p>
+	<p>如果dfn元素包含具有标题的abbr元素，则title定义项目</p>
+	<p><dfn><abbr title="World Health Organization">WHO</abbr></dfn>成立于1948年。</p>
+	<p>否则，dfn文本内容就是项目，并且父元素包含定义</p>
+	<p><dfn>WHO</dfn> World Health Organization 成立于 1948 年。</p>
+</body>
+</html>
