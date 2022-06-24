@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>轮廓颜色</title>
+	<style type="text/css">
+		/*使用多种颜色表示法指定轮廓的颜色*/
+		.ex1{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: red;
+		}
+		.ex2{
+			border: 2px solid black;
+			outline-style: dotted;
+			outline-color: blue;
+		}
+		.ex3{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: gray;
+		}
+
+		.ex4{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: #ff0000;
+		}
+		.ex5{
+			border: 2px solid black;
+			outline-style: dotted;
+			outline-color: #0000ff;
+		}
+		.ex6{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: #666666;
+		}
+
+		.ex7{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: rgb(255, 0, 0);
+		}
+		.ex8{
+			border: 2px solid black;
+			outline-style: dotted;
+			outline-color: rgb(0, 0, 255);
+		}
+		.ex9{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: rgb(102, 102, 102);
+		}
+
+		.ex10{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: hsl(0, 100%, 50%);
+		}
+		.ex11{
+			border: 2px solid black;
+			outline-style: dotted;
+			outline-color: hsl(240, 100%, 50%);
+		}
+		.ex12{
+			border: 2px solid black;
+			outline-style: solid;
+			outline-color: hsl(0, 0%, 50%);
+		}
+
+		.ex13{
+			border: 2px solid yellow;
+			outline-style: solid;
+			outline-color: invert;
+		}
+	</style>
+</head>
+<body>
+	<h1>outline-color 属性</h1>
+	<p>outline-color 属性用于设置轮廓的颜色。</p>
+	<p class="ex1">红色的实线轮廓。</p>
+	<p class="ex2">蓝色的点状轮廓。</p>
+	<p class="ex3">灰色的实线轮廓。</p>
+	<hr>
+
+	<p>也可以使用十六进制值（HEX）规定轮廓颜色：</p>
+	<p class="ex4">红色的实线轮廓。</p>
+	<p class="ex5">蓝色的点状轮廓。</p>
+	<p class="ex6">灰色的实线轮廓。</p>
+	<hr>
+
+	<p>也可以使用 RGB 值规定轮廓颜色：</p>
+	<p class="ex7">红色的实线轮廓。</p>
+	<p class="ex8">蓝色的点状轮廓。</p>
+	<p class="ex9">灰色的实线轮廓。</p>
+	<hr>
+
+	<p>也可以使用 HSL 值规定轮廓颜色：</p>
+	<p class="ex10">红色的实线轮廓。</p>
+	<p class="ex11">蓝色的点状轮廓。</p>
+	<p class="ex12">灰色的实线轮廓。</p>
+	<hr>
+
+	<h1>使用 outline-color:invert</h1>
+	<p class="ex13">invert 实线轮廓</p>
+</body>
+</html>

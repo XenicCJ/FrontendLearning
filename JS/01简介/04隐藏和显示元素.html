@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>隐藏和显示元素</title>
+	<script type="text/javascript">
+		function show(){
+			var e=document.getElementById("demo");
+			e.style.display="block";
+		}
+		function hide(){
+			var e=document.getElementById("demo");
+			e.style.display="none";
+		}
+	</script>
+</head>
+<body>
+	<h2>JavaScript 能够做什么</h2>
+
+	<p id="demo">JavaScript 能够隐藏和显示 HTML 元素。</p>
+
+	<button type="button" onclick="show()">
+	显示元素
+	</button>
+	<button type="button" onclick="hide()">
+	隐藏元素
+	</button>
+</body>
+</html>

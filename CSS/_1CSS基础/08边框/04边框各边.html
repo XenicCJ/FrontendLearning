@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>边框各边</title>
+	<style type="text/css">
+		/*对边框的不同边设置不一样的颜色和样式*/
+		p.four{
+			border-style: dotted solid double inset;
+			border-color: red green blue pink;
+		}
+		p.three{
+			border-style: dotted solid double;
+			border-color: red green blue;
+		}
+		p.two{
+			border-style: dotted solid;
+			border-color: red green;
+		}
+		p.one{
+			border-style: dotted;
+			border-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>单独的边框</h1>
+
+	<p class="four">四种不同的边框样式和颜色。</p>
+	<p class="three">三种不同的边框样式和颜色。</p>
+	<p class="two">两种不同的边框样式和颜色。</p>
+	<p class="one">一种边框样式和颜色。</p>
+
+</body>
+</html>

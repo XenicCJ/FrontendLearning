@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>提升</title>
+</head>
+<body>
+	<h1>JavaScript 提升</h1>
+	<p>使用 <b>var</b>，您可以在声明之前使用变量：</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		carName="Lamborghini";
+		document.getElementById("demo").innerHTML=carName;
+		var carName;
+	</script>
+</body>
+</html>

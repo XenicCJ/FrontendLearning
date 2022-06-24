@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>循环作用域</title>
+</head>
+<body>
+	<h1>JavaScript let</h1>
+	<p id="demo1"></p>
+	<h1>JavaScript let</h1>
+	<p id="demo2"></p>
+
+	<script type="text/javascript">
+		var a=5;
+		for(var a=0;a<10;a++);
+		document.getElementById("demo1").innerHTML=a;
+
+		var a=5;
+		for(let a=0;a<10;a++);
+		document.getElementById("demo2").innerHTML=a;
+	</script>
+</body>
+</html>

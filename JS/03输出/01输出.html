@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>输出</title>
+	<script type="text/javascript">
+		function alertTest(){
+			alert('Hello guys!');
+		}
+
+		function innerHTMLtest(){
+			document.getElementById("innerhtmlp").innerHTML="5+6="+(5+6);
+		}
+
+		function consoleTest(){
+			console.log("5+6="+(5+6));
+		}
+
+		function writeTest(){
+			document.write(5*6);
+		}
+	</script>
+</head>
+<body>
+	<h1>测试输出方式</h1>
+	<hr>
+
+	<p>使用alert</p>
+	<button onclick="alertTest()">测试alert</button>
+	<hr>
+
+	<p>使用innerhtml</p>
+	<p id="innerhtmlp">按下按钮改变内容</p>
+	<button onclick="innerHTMLtest()">测试innerhtml</button>
+	<hr>
+
+	<p>使用console</p>
+	<button onclick="consoleTest()">测试console</button>
+	<hr>
+
+	<p>使用document.write</p>
+	<button onclick="writeTest()">测试write</button>
+	<hr>
+</body>
+</html>

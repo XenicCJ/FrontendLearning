@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>轮廓样式</title>
+	<style type="text/css">
+		/*使用outline-style指定不同外观的轮廓*/
+		p {outline-color:red;border: 5px solid black;}
+
+		p.dotted {outline-style: dotted;}
+		p.dashed {outline-style: dashed;}
+		p.solid {outline-style: solid;}
+		p.double {outline-style: double;}
+		p.groove {outline-style: groove;}
+		p.ridge {outline-style: ridge;}
+		p.inset {outline-style: inset;}
+		p.outset {outline-style: outset;}
+</style>
+	</style>
+</head>
+<body>
+	<p class="dotted">点状轮廓</p>
+	<p class="dashed">虚线轮廓</p>
+	<p class="solid">实线轮廓</p>
+	<p class="double">双线轮廓</p>
+	<p class="groove">凹槽轮廓。效果取决于 outline-color 值。</p>
+	<p class="ridge">凸脊轮廓。效果取决于 outline-color 值。</p>
+	<p class="inset">凹边轮廓。效果取决于 outline-color 值。</p>
+	<p class="outset">凸边轮廓。效果取决于 outline-color 值。</p>
+</body>
+</html>

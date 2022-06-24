@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>简写边框属性</title>
+	<style type="text/css">
+		/*设置统一border样式*/
+		p.one{
+			border: 10px inset pink;
+		}
+		/*为每个边都设置简写边框样式*/
+		p.two{
+			border-top: 10px inset pink;
+			border-right: 20px double blue;
+			border-bottom: 30px dotted green;
+			border-left: 40px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>border 属性</h1>
+
+	<p class="one">此属性是 border-width、border-style 以及 border-color 的简写属性。</p>
+	<p class="two">此属性是 border-width、border-style 以及 border-color 的简写属性。</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>文字间距</title>
+	<style type="text/css">
+		/*文本首行缩进*/
+		p.indent{
+			text-indent: 100px;
+		}
+		h1.letterspace1{
+			letter-spacing: 5px;
+		}
+		h2.letterspace2{
+			letter-spacing: -3px;
+		}
+		/*文本行间距*/
+		p.small{
+			line-height: 0.5;
+		}
+		p.big{
+			line-height: 1.5;
+		}
+		/*文本字词间距*/
+		h1.wordspace1{
+			word-spacing: 10px;
+		}
+		h2.wordspace2{
+			word-spacing: -5px;
+		}
+		/*禁止文本换行*/
+		p.whitespace{
+			white-space: nowrap;
+		}
+	</style>
+</head>
+<body>
+	<p class="indent">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+	<hr>
+
+	<h1 class="letterspace1">This is heading 1</h1>
+	<h2 class="letterspace2">This is heading 2</h2>
+	<hr>
+
+	<p>
+	这是有标准行高的段落<br>
+	大多数浏览器中的默认行高大概是 110% 到 120%。<br>
+	</p>
+	<p class="small">
+	这是行高更小的段落。<br>
+	这是行高更小的段落。<br>
+	</p>
+	<p class="big">
+	这是行高更大的段落。<br>
+	这是行高更大的段落。<br>
+	</p>
+	<hr>
+
+	<h1 id="wordspace1">This is heading 1</h1>
+	<h2 id="wordspace2">This is heading 2</h2>
+	<hr>
+
+	<h2>空白</h2>
+	<p class="whitespace">
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	This is some text. This is some text. This is some text.
+	</p>
+	<p>请尝试删除 white-space 属性来看一下区别。</p>
+</body>
+</html>

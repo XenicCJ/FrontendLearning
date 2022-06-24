@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>边框宽度</title>
+	<style type="text/css">
+		/*设置宽度前先设置边框样式*/
+		/*用像素规定边框宽度*/
+		p.one{
+			border-style: dashed;
+			border-width: 10px;
+		}
+		/*用thin medieum thick规定边框宽度*/
+		p.two{
+			border-style: double;
+			border-width: thin;
+		}
+		p.three{
+			border-style: inset;
+			border-width: medium;
+		}
+		p.four{
+			border-style:  dotted dashed solid double;
+			border-width: thick;
+		}
+		/*为不同边框设置不同宽度*/
+		p.five{
+			border-style: solid;
+			border-width: 10px 20px;
+		}
+		p.six{
+			border-style: solid;
+			border-width: 10px 20px 30px;
+		}
+		p.seven{
+			border-style: solid;
+			border-width: 10px 20px 30px 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>border-width 属性</h1>
+
+	<p>此属性规定四条边框的宽度：</p>
+
+	<p class="one">一些文本。</p>
+	<p class="two">一些文本。</p>
+	<p class="three">一些文本。</p>
+	<p class="four">一些文本。</p>
+	<p class="five">一些文本。</p>
+	<p class="six">一些文本。</p>
+	<p class="seven">一些文本。</p>
+	<p><b>注释：</b>border-color 属性单独使用时不起作用。请首先使用 border-style 属性设置样式。</p>
+</body>
+</html>

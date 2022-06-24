@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>单独外边距</title>
+	<style type="text/css">
+		/*通过简写的方式设置外边距*/
+		div.four{
+			border: 1px solid red;
+			margin: 25px 50px 75px 100px;
+			background-color: green;
+		}
+		div.three{
+			border: 1px solid red;
+			margin: 25px 50px 75px;
+			background-color: green;
+		}
+		div.two{
+			border: 1px solid red;
+			margin: 25px 50px;
+			background-color: green;
+		}
+		div.one{
+			border: 1px solid red;
+			margin: 25px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>简写属性 margin - 4 个值</h1>
+	<div class="four">这个 div 元素的上外边距是 25 像素，右外边距是 50 像素，下外边距是 75 像素，左外边距是 100 像素。</div>
+	<hr>
+	<h1>简写属性 margin - 3 个值</h1>
+	<div class="three">div 元素的上外边距是 25 像素，左右外边距是 50 像素，而下外边距是 75 像素。</div>
+	<hr>
+	<h1>简写属性 margin - 2 个值</h1>
+	<div class="two">div 元素的上下外边距是 25 像素，左右外边距是 50 像素。</div>
+	<hr>
+	<h1>简写属性 margin - 1 个值</h1>
+	<div class="one">div 元素的上、下、左、右外边距均为 25 像素。</div>
+	<hr>
+</body>
+</html>

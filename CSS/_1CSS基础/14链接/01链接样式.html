@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>链接样式</title>
+	<style type="text/css">
+		a#a1:link{
+			color: red;
+			text-decoration: none;
+			background-color: yellow;
+		}
+		a#a1:visited{
+			color: green;
+			text-decoration: none;
+			background-color: cyan;
+		}
+		a#a1:hover{
+			color: hotpink;
+			text-decoration: underline;
+			background-color: lightblue;
+		}
+		a#a1:active{
+			color: blue;
+			text-decoration: line-through;
+			background-color: hotpink;
+		}
+
+		a#a2:link, a#a2:visited{
+			background-color: red;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+		a#a2:hover,a#a2:active{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS 链接</h1>
+	<p><b><a id="a1" href="../01简介/01简介.html" target="_blank">这是一个链接</a></b></p>
+	<p><b><a id="a2" href="../01简介/01简介.html" target="_blank">这是一个好看的链接</a></b></p>
+	<p><b>注释：</b>在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后才能生效。</p>
+	<p><b>注释：</b>在 CSS 定义中，a:active 必须位于 a:hover 之后才能生效。</p>
+</body>
+</html>

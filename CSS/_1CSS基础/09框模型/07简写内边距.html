@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>简写内边距</title>
+	<style type="text/css">
+		/*通过简写的方式设置元素的内边距*/
+		div{
+			background-color: lightblue;
+			border: 1px solid black;
+		}
+		#four{
+			padding: 25px 50px 75px 100px;
+		}
+		#three{
+			padding: 25px 50px 75px;
+		}
+		#two{
+			padding: 25px 50px;
+		}
+		#one{
+			padding: 25px;
+		}
+	</style>
+</head>
+<body>
+	<h1>简写的内边距属性 - 4 个值</h1>
+	<div id="four">这个 div 元素的上内边距是 25px，右内边距是 50px，下内边距是 75px，而左内边距是 100px。</div>
+	<hr>
+	<h1>简写的内边距属性 - 3 个值</h1>
+	<div id="three">这个 div 元素的上内边距是 25px，左右内边距是 50px，下内边距是 75px。</div>
+	<hr>
+	<h1>简写的内边距属性 - 2 个值</h1>
+	<div id="two">这个 div 元素的上、下内边距为 25 像素，左、右内边距为 50 像素。</div>
+	<hr>
+	<h1>简写的内边距属性 - 1 个值</h1>
+	<div id="one">这个 div 元素的上、下、左、右内边距均为 25 像素。</div>
+	<hr>
+</body>
+</html>

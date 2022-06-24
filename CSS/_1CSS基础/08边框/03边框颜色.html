@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>边框颜色</title>
+	<style type="text/css">
+		/*用属性规定边框的颜色*/
+		p.one{
+			border-style: dotted;
+			border-color: blue;
+		}
+		p.two{
+			border-style: solid;
+			border-color: green red;
+		}
+		p.three{
+			border-style: solid;
+			border-color: green red blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>border-color 属性</h1>
+
+	<p>此属性规定四条边框的颜色：</p>
+
+	<p class="one">蓝色点状边框</p>
+	<p class="two">绿加红实心边框</p>
+	<p class="three">绿红蓝实心边框</p>
+
+	<p><b>注释：</b>border-color 属性单独使用时不起作用。请首先使用 border-style 属性设置样式。</p>
+</body>
+</html>

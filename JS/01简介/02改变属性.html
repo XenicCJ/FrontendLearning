@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>改变属性</title>
+	<style type="text/css">
+		div#sunmoon{
+			width: 200px;
+			height: 200px;
+			box-sizing: border-box;
+			padding: 70px 40px;
+			border-radius: 50%;
+			background-color: yellow;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function sun(){
+			document.getElementById("sunmoon").style.background='yellow';
+		}	
+
+		function moon(){
+			document.getElementById("sunmoon").style.background='gray';
+		}
+	</script>
+</head>
+<body>
+	<h2>JavaScript 能做什么？</h2>
+
+	<p>JavaScript 能够改变 HTML 属性值。</p>
+
+	<p>在本例中，JavaScript 改变了div的 background-color 属性值。</p>
+
+	<div id="sunmoon">我是一个小太阳同时又是小月亮</div>
+	<button onclick="sun()">太阳</button>
+	<button onclick="moon()">月亮</button>
+</body>
+</html>

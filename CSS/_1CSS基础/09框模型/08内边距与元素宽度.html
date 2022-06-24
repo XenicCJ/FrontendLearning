@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>内边距与元素宽度</title>
+	<style type="text/css">
+		/*元素的宽度高度受内外边距以及边框宽度影响，除非设置box-sizing属性*/
+		div.ex1{
+			width: 300px;
+			background-color: yellow;
+		}
+		div.ex2{
+			width: 300px;
+			background-color: lightblue;
+			padding: 25px;
+		}
+		div.ex3{
+			width: 300px;
+			background-color: pink;
+			padding: 25px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<h1>内边距和元素宽度</h1>
+	<div class="ex1">这个 div 是 300 像素宽。</div>
+	<br>
+	<div class="ex2">这个 div 是 350 像素宽，即使在 CSS 中它被定义为 300 像素。</div>
+	<hr>
+	<h1>内边距和元素宽度 - 设置  box-sizing</h1>
+	<div class="ex3">div 的宽度保持在 300 像素，尽管总的左右内边距为 50 像素，因为设置了 box-sizing: border-box 属性。</div>
+</body>
+</html>

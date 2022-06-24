@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>相邻元素外边距合并</title>
+	<style type="text/css">
+		/*若相邻的两个元素有各自的外边距，则会取大值合并*/
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		#d1{
+			width: 100px;
+			height: 100px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			background-color: red;
+		}
+		#d2{
+			width: 100px;
+			height: 100px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1">
+	</div>
+
+	<div id="d2">
+	</div>
+
+	<p>请注意，两个 div 之间的外边距是 20px，而不是 30px（20px + 10px）。</p>
+</body>
+</html>

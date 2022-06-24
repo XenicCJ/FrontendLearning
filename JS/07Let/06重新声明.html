@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>重新声明</title>
+</head>
+<body>
+	<h1>JavaScript let</h1>
+
+	<p>在程序的任何位置都允许使用 <b>var</b> 重新声明JavaScript变量：</p>
+	<p id="demo1"></p>
+	<p>在程序的同一作用域中不允许<b>var</b>和<b>let</b>互相 重新声明JavaScript变量：</p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p>在程序的同一作用域中不允许<b>let</b>重新声明JavaScript变量：</p>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		var x = 2;
+		// 此时 x 是 2
+		var x = 3;
+		// 此时 x 是 3
+		document.getElementById("demo1").innerHTML = x;
+
+		try {
+			var x = 1;       // 允许
+			let x = 2;       // 不允许
+			{
+			  var x = 3;   // 允许
+			  let x = 4;   // 不允许
+			}
+		}
+		catch (err){
+			document.getElementById("demo2").innerHTML = err;
+		}
+		
+		try {
+			let x = 10;       // 允许
+			let x = 6;       // 不允许
+			{
+			  let x = 10;   // 允许
+			  let x = 6;   // 不允许
+			}
+		}
+		catch (err){
+			document.getElementById("demo3").innerHTML = err;
+		}
+
+		try {
+			let x = 6;       // 允许
+			{
+			  let x = 7;   // 允许
+			}
+			{
+			  let x = 8;   // 允许
+			}
+		}
+		catch (err){
+			document.getElementById("demo4").innerHTML = err;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>字符串方法</title>
+</head>
+<body>
+	<h1>JavaScript 字符串方法</h1>
+	<p>lastIndexOf() 返回指定文本最后出现的位置：</p>
+	<p id="demo1"></p>
+
+	<p>indexOf() 方法返回指定文本首次出现的位置：</p>
+	<p id="demo2"></p>
+
+	<p>lastIndexOf() 方法接受第二个参数作为搜索的起始位置：</p>
+	<p>请记住，lastIndexOf（）方法向后搜索，因此位置 50 表示在第 50 位开始搜索，并搜索到开头。</p>
+	<p>位置 50 指的是从开头算起的位置 50。</p>
+	<p id="demo3"></p>
+
+	<p>search() 方法返回字符串中指定文本第一次出现的位置：</p>
+	<p id="demo4"></p>
+
+	<p>slice() 提取字符串的某个部分，并在新字符串中返回被提取的部分。</p>
+	<p id="demo5"></p>
+
+	<p>substring() 提取字符串的某个部分，并在新字符串中返回被提取的部分。</p>
+	<p id="demo6"></p>
+
+	<p>substr() 提取字符串的某个部分，并在新字符串中返回被提取的部分。</p>
+	<p id="demo7"></p>
+
+	<p>请把下面的段落中的“Microsoft”替换为“W3School”：</p>
+	<button onclick="replaceFunction()">试一试</button>
+	<p id="demo8">请访问 Microsoft！</p>
+
+	<p>把字符串转换为大写：</p>
+	<button onclick="upperFunction()">试一试</button>
+	<p id="demo9">Hello World!</p>
+
+	<p>把字符串转换为小写：</p>
+	<button onclick="lowerFunction()">试一试</button>
+	<p id="demo10">Hello World!</p>
+
+	<p>concat()方法连接两个或多个字符串：</p>
+	<p id="demo11"></p>
+
+	<p>     点击这个按钮来输出已删除空白字符的字符串。    </p>
+	<button onclick="trimFunction()">试一试</button>
+	<p id="demo12"></p>
+
+	<p>charAt() 方法返回字符串中指定位置的字符串：</p>
+	<p id="demo13"></p>
+
+	<p>单击“试一试”以显示在字符串拆分后的第一个数组元素。</p>
+	<button onclick="splitFunction()">试一试</button>
+	<p id="demo14"></p>
+
+	<script type="text/javascript">
+		var str = "The full name of China is the People's Republic of China.";
+		var pos=str.lastIndexOf("China");
+		document.getElementById("demo1").innerHTML=pos;
+
+		var pos=str.indexOf("China");
+		document.getElementById("demo2").innerHTML=pos;
+
+		var pos=str.lastIndexOf("China",50);
+		document.getElementById("demo3").innerHTML=pos;
+
+		var pos=str.search("China");
+		document.getElementById("demo4").innerHTML=pos;
+
+		var res=str.slice(4,9);
+		document.getElementById("demo5").innerHTML=res;
+
+		var res=str.substring(9,13);
+		document.getElementById("demo6").innerHTML=res;
+
+		var res=str.substring(17,23);
+		document.getElementById("demo7").innerHTML=res;
+
+		function replaceFunction(){
+			var str=document.getElementById("demo8").innerHTML;
+			str=str.replace("Microsoft", "W3School");
+			document.getElementById("demo8").innerHTML=str;
+		}
+
+		function upperFunction(){
+			var str=document.getElementById("demo9").innerHTML;
+			str=str.toUpperCase();
+			document.getElementById("demo9").innerHTML=str;
+		}
+
+		function lowerFunction(){
+			var str=document.getElementById("demo10").innerHTML;
+			str=str.toLowerCase();
+			document.getElementById("demo10").innerHTML=str;
+		}
+
+		var str1="Hello";
+		var str2="World";
+		document.getElementById("demo11").innerHTML=str1.concat(" ",str2);
+
+		function trimFunction(){
+			var str="    Hello    World    ";
+			document.getElementById("demo12").innerHTML=str.trim();
+		}
+
+		var str = "The full name of China is the People's Republic of China.";
+		var res=str.charAt(2);
+		document.getElementById("demo13").innerHTML=res;
+
+		function splitFunction(){
+			var res=str.split(' ');
+			document.getElementById("demo14").innerHTML=res;
+		}
+	</script>
+</body>
+</html>

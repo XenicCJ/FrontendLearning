@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>head中的js</title>
+	<script type="text/javascript">
+		function show(){
+			var e=document.getElementById("demo");
+			e.style.display="block";
+		}
+		function hide(){
+			var e=document.getElementById("demo");
+			e.style.display="none";
+		}
+	</script>
+</head>
+<body>
+	<h2>head中的js</h2>
+
+	<p id="demo">在本例中，JavaScript 函数被放置于 HTML 页面的 head部分。</p>
+
+	<button type="button" onclick="show()">
+	显示元素
+	</button>
+	<button type="button" onclick="hide()">
+	隐藏元素
+	</button>
+</body>
+</html>
