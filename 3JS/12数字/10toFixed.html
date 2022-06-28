@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>toFixed</title>
+</head>
+<body>
+	<h1>JavaScript 数字方法</h1>
+	<p>toFixed() 方法将数字四舍五入为给定的位数。</p>
+	<p>对于处理金钱，toFixed(2) 是完美的。</p>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var x=7.536;
+		document.getElementById("demo").innerHTML=
+			x.toFixed(0)+"<br>"+
+			x.toFixed(1)+"<br>"+
+			x.toFixed(3)+"<br>"+
+			x.toFixed(5);
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>十六进制</title>
+</head>
+<body>
+
+<h1>JavaScript 数字</h1>
+<p>前缀为 0x 的数值常量会被解释为十六进制：</p>
+<p id="demo1"></p>
+
+<p>toString() 方法以基数 2 到 16 输出字符串：</p>
+<p id="demo2"></p>
+
+<script type="text/javascript">
+	var num=0xfff;
+	document.getElementById("demo1").innerHTML=num;
+
+	var num=512
+	document.getElementById("demo2").innerHTML=
+		32+"=<br>"+
+		"Decimal: "+num.toString(10)+"<br>"+
+		"Hexadecimal: "+num.toString(16)+"<br>"+
+		"Octal: "+num.toString(8)+"<br>"+
+		"Binary: "+num.toString(2);
+</script>
+</body>
+</html>

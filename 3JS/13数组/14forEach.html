@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forEach</title>
+</head>
+<body>
+
+<h1>JavaScript Array.forEach()</h1>
+<p>为每个元素调用一次函数。</p>
+<p id="demo"></p>	
+
+<script type="text/javascript">
+var numbers = [45, 4, 9, 16, 25];
+var text="";
+numbers.forEach(dataDeal);
+document.getElementById("demo").innerHTML=text;
+
+function dataDeal(value,index,array){
+	text+="index: "+index+" value: "+value+"<br>";
+}
+</script>
+</body>
+</html>

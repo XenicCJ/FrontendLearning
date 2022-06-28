@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>对象排序</title>
+</head>
+<body>
+
+<h1>JavaScript 数组排序</h1>
+<p>点击按钮按车型对汽车进行排序：</p>
+<button onclick="mySort()">排序</button>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var cars = [
+	  {type:"BMW", year:2017},
+	  {type:"Audi", year:2019},
+	  {type:"porsche", year:2018}
+	];	
+	showCars();
+
+	function showCars(){
+		var text="";
+		for(var i=0;i<cars.length;i++){
+			text+="type: "+cars[i].type+" year: "+cars[i].year+"<br>";
+		}
+		document.getElementById("demo").innerHTML=text;
+	}
+
+	function mySort(){
+		cars.sort(mySortJudge);
+		showCars();
+	}
+
+	function mySortJudge(a,b){
+		var atype=a.type.toLowerCase();
+		var btype=b.type.toLowerCase();
+		if(atype>btype) return 1;
+		if(atype<btype) return -1;
+		return 0;
+	}
+
+
+</script>
+
+</body>
+</html>

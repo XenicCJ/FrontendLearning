@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>break continue</title>
+</head>
+<body>
+
+<p>带 break 的循环</p>
+<p id="demo1"></p>
+<hr>
+<p>这个循环在 i=3 时跳过这一步：</p>
+<p id="demo2"></p>
+<hr>
+<p>JavaScript break</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var i=0;
+	var text="";
+	for(var i=0;i<10;i++){
+		if(i==5){
+			break;
+		}
+		text+=i+" ";
+	}
+	document.getElementById("demo1").innerHTML=text;
+
+	var i=0;
+	var text="";
+	for(var i=0;i<10;i++){
+		if(i==5){
+			continue;
+		}
+		text+=i+" ";
+	}
+	document.getElementById("demo2").innerHTML=text;
+
+	var cars = ["BMW", "Volvo", "porsche", "Ford"];
+	var text = "";
+	list: {
+	  text += cars[0] + "<br>"; 
+	  text += cars[1] + "<br>"; 
+	  text += cars[2] + "<br>"; 
+	  break list;
+	  text += cars[3] + "<br>"; 
+	}
+	document.getElementById("demo").innerHTML = text;
+</script>	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>infinity</title>
+</head>
+<body>
+
+<h1>JavaScript 数字</h1>
+<p>Infinity （或 -Infinity）是 JavaScript 在计算数时超出最大可能数范围时返回的值：</p>
+<p id="demo1"></p>
+
+<p>除以 0（零）也会生成 Infinity：</p>
+<p id="demo2"></p>
+
+<p>Infinity 是数字：</p>
+<p id="demo3"></p>
+
+<script type="text/javascript">
+	var num=2;
+	var text="";
+	while(num!=Infinity){
+		num=num*num;
+		text+=num+"<br>";
+	}
+	document.getElementById("demo1").innerHTML=text;
+
+	document.getElementById("demo2").innerHTML=1/0;
+
+	document.getElementById("demo3").innerHTML=typeof(Infinity);
+</script>
+
+</body>
+</html>

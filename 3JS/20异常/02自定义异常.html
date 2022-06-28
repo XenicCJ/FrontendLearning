@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>抛出异常</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		try{
+			throw "this is a error";
+		}catch(err){
+			document.getElementById("demo").innerHTML=err;
+		}
+	</script>
+</body>
+</html>

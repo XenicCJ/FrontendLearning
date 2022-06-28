@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>范围错误</title>
+</head>
+<body>
+
+<h1>JavaScript 异常</h1>
+<p>您不能将数字的有效位数设置为1000：</p>
+<p id="demo">
+
+<script type="text/javascript">
+	var num=1;
+	try{
+		num.toPrecision(1000);
+	}catch(err){
+		document.getElementById("demo").innerHTML=err.name+" "+err.message;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>toPrecision</title>
+</head>
+<body>
+<h1>JavaScript 数字方法</h1>
+<p>toPrecision() 方法返回一个字符串，其中包含一个用指定长度写的数字：</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+var x=7.536;
+document.getElementById("demo").innerHTML=
+	x.toPrecision(1)+"<br>"+
+	x.toPrecision(2)+"<br>"+
+	x.toPrecision(3)+"<br>"+
+	x.toPrecision(4);
+</script>
+</body>
+</html>

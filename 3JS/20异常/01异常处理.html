@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>异常处理</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		try{
+			adddlert("hello world");
+		}catch(err){
+			document.getElementById("demo").innerHTML=err.name+" "+err.message;
+		}finally{
+			alert("finally");
+		}
+	</script>
+</body>
+</html>

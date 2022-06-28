@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>数字和字符串相加</title>
+</head>
+<body>
+	<h1>JavaScript 数字</h1>
+	<p>如果您对两个数相加，结果将是一个数：</p>
+	<p id="demo1"></p>
+	<p>如果添加两个数字字符串，结果将是级联字符串：</p>
+	<p id="demo2"></p>
+	<p>如果数字和数字字符串相加，结果将是级联字符串：</p>
+	<p id="demo3"></p>
+	<p>一个常见的错误是期望这个结果是 102030：</p>
+	<p id="demo4"></p>
+
+	<script type="text/javascript">
+		var x=10;
+		var y=20;
+		document.getElementById("demo1").innerHTML=x+y;
+
+		var x="10";
+		var y="20";
+		document.getElementById("demo2").innerHTML=x+y;
+
+		var x=10;
+		var y="20";
+		document.getElementById("demo3").innerHTML=x+y;
+
+		var x=10;
+		var y=20;
+		var z="30";
+		document.getElementById("demo4").innerHTML=x+y+z;
+	</script>
+</body>
+</html>

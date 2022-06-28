@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>模板插值</title>
+</head>
+<body>
+	<h2>JavaScript 模板字面量</h2>
+	<p>模板字面量允许字符串中的变量：</p>
+	<p>模板字面量允许字符串中的表达式：</p>
+	<p id="demo"></p>
+	<p>Internet Explorer 不支持模板字面量。</p>
+
+	<script type="text/javascript">
+		let firstName="Bill";
+		let lastName="Gates";
+		let price=100;
+		let VAT=0.1255;
+
+		let text=`Welcome ${firstName} ${lastName}, the total price is ${(price*(1+VAT)).toFixed(1)}`;
+
+		document.getElementById("demo").innerHTML=text;
+	</script>
+</body>
+</html>

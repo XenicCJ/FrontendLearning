@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>findIndex</title>
+</head>
+<body>
+
+<h1>JavaScript Array.findIndex()</h1>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var numbers = [4, 9, 16, 25, 29];
+	var index=numbers.findIndex(checker);
+	document.getElementById("demo").innerHTML=index;
+
+	function checker(value,index,array){
+		return value>22;
+	}
+</script>
+</body>
+</html>

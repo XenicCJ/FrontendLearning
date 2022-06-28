@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>裁剪数组</title>
+</head>
+<body>
+
+<h1>JavaScript 数组方法</h1> 
+<h2>slice()</h2>
+<p>当给 slice() 方法赋予两个参数时，它从 <i>start</i> 参数中选择数组元素，直到（但不包括）<i>end</i> 参数：</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+	var someFruits=fruits.slice(1,4);
+	document.getElementById("demo").innerHTML=
+		fruits+"<br>"+
+		someFruits;
+
+</script>
+</body>
+</html>

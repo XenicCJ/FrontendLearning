@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>some</title>
+</head>
+<body>
+
+<h1>JavaScript Array.some()</h1>
+<p>some() 方法检查某些数组值是否通过了测试。</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var numbers = [45, 4, 9, 16, 25];
+	var someOver=numbers.some(checker);
+	document.getElementById("demo").innerHTML=someOver;
+
+	function checker(value, index, array){
+		return value>50;
+	}
+</script>
+</body>
+</html>

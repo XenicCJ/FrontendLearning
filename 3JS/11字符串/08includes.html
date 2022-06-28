@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>includes</title>
+</head>
+<body>
+	<h2>JavaScript 字符串搜索</h2>
+	<p>检查字符串是否包含 "world"：</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p>Internet Explorer 不支持 includes() 方法。</p>
+
+	<script type="text/javascript">
+		let text = "Hello world, welcome to the universe.";
+		document.getElementById("demo1").innerHTML=text.includes("world");
+		document.getElementById("demo2").innerHTML=text.includes("world",12);
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>非数值</title>
+</head>
+<body>
+	<h1>JavaScript 数字</h1>
+	<p>用非数字字符串进行除法会得到 NaN（Not a Number）：</p>
+	<p id="demo1"></p>
+	<p>您可使用全局 JavaScript 函数 isNaN() 来确定某个值是否是数：</p>
+	<p id="demo2"></p>
+	<p>假如您在数学运算中使用了 NaN，则结果也将是 NaN：</p>
+	<p id="demo3"></p>
+	<p>假如您在数学运算中使用了 NaN，则结果可能是级联：</p>
+	<p id="demo4"></p>
+	<p>NaN 是数，typeof NaN 返回 number：</p>
+	<p id="demo5"></p>
+
+	<script type="text/javascript">
+		document.getElementById("demo1").innerHTML=100/"Apple";
+		document.getElementById("demo2").innerHTML=isNaN(100/"Apple");
+		document.getElementById("demo3").innerHTML=10*NaN;
+		document.getElementById("demo4").innerHTML="100"+NaN;
+		document.getElementById("demo5").innerHTML=typeof(NaN);
+	</script>
+</body>
+</html>

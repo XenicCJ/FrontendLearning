@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>反转数组</title>
+</head>
+<body>
+<h1>JavaScript 数组排序反转</h1>
+<p>reverse() 方法反转数组中的元素。</p>
+<p>通过组合 sort() 和 reverse()，您可以按降序对数组进行排序。</p>
+<button onclick="mySortReverse()">试一试</button>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+
+	function mySortReverse(){
+		fruits.sort();
+		fruits.reverse();
+		document.getElementById("demo").innerHTML = fruits;
+	}
+</script>
+</body>
+</html>

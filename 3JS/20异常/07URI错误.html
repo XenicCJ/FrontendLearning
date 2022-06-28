@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>URI错误</title>
+</head>
+<body>
+
+<h1>JavaScript 异常</h1>
+<p>使用 decodeURI() 无法解码某些字符：</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	try{
+		decodeURI("%%%");
+	}catch(err){
+		document.getElementById("demo").innerHTML=err.name+" "+err.message;
+	}
+</script>
+</body>
+</html>

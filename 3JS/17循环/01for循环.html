@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>for</title>
+</head>
+<body>
+<p>假如您需要运行代码多次，且每次使用不同的值，那么循环（loop）相当方便使用</p>
+<p id="demo1"></p>
+<hr>
+<p>JavaScript for/in 语句遍历对象的属性</p>
+<p id="demo2"></p>
+<hr>
+<p>for in 语句可以遍历数组值：</p>
+<p id="demo3"></p>
+<hr>
+<p>为每个数组元素调用一次函数。</p>
+<p id="demo4"></p>
+<hr>
+<p>for of 语句循环遍历可迭代对象的值。</p>
+<p id="demo5"></p>
+
+<script type="text/javascript">
+	var cars = ["BMW", "Volvo", "porsche", "Ford"];
+	var text="";
+	for(var i=0;i<cars.length;i++){
+		text+="cars "+i+": "+cars[i]+"<br>";
+	}
+	document.getElementById("demo1").innerHTML=text;
+
+	var person = {fname:"Bill", lname:"Gates", age:62}; 
+	var text="";
+	for(e in person){
+		text+=e+": "+person[e]+"<br>";
+	}
+	document.getElementById("demo2").innerHTML=text;
+
+	var numbers = [45, 4, 9, 16, 25];
+	var text="";
+	for(let i in numbers){
+		text+=i+" "
+	}
+	document.getElementById("demo3").innerHTML=text;
+
+	var numbers = [45, 4, 9, 16, 25];
+	var text="";
+	numbers.forEach(loopDealer);
+	document.getElementById("demo4").innerHTML=text;
+	function loopDealer(value,index,array){
+		text+=value+" ";
+	}
+
+	let language = "JavaScript";
+	var text="";
+	for(c of language){
+		text+=c+"<br>";
+	}
+	document.getElementById("demo5").innerHTML=text;
+</script>
+</body>
+</html>

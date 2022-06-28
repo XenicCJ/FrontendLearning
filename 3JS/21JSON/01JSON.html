@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSON</title>
+</head>
+<body>
+
+<h1>用 JSON 字符串创建对象</h1>
+<p id="demo"></p>	
+
+<script type="text/javascript">
+	var text = '{"employees":[' +
+	'{"firstName":"Bill","lastName":"Gates" },' +
+	'{"firstName":"Steve","lastName":"Jobs" },' +
+	'{"firstName":"Elon","lastName":"Musk" }]}';
+
+	var obj=JSON.parse(text);
+	document.getElementById("demo").innerHTML=
+		obj.employees[1].firstName+" "+obj.employees[1].lastName;
+</script>
+</body>
+</html>

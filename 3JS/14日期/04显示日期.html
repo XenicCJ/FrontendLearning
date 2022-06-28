@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>显示日期</title>
+</head>
+<body>
+
+<h2>JavaScript Date()</h2>
+<p>toUTCString() 方法将日期转换为 UTC 字符串（日期显示标准）：</p>
+<p id="demo1"></p>	
+<p>toDateString() 方法将日期转换为日期字符串：</p>
+<p id="demo2"></p>
+
+<script type="text/javascript">
+	var date=new Date();
+	document.getElementById("demo1").innerHTML=date.toUTCString();
+	document.getElementById("demo2").innerHTML=date.toDateString();
+</script>
+</body>
+</html>

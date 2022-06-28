@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>引用错误</title>
+</head>
+<body>
+
+<h1>JavaScript 异常</h1>
+<p>您不能使用不存在的变量的值：</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var x=0;
+	try{
+		x=y+1;
+	}catch(err){
+		document.getElementById("demo").innerHTML=err.name+" "+err.message;
+	}
+</script>
+</body>
+</html>

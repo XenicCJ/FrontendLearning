@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>html模板</title>
+</head>
+<body>
+	<h2>JavaScript 模板字面量</h2>
+	<p>模板字面量允许字符串中的变量：</p>
+	<div id="demo"></div>
+	<p>Internet Explorer 不支持模板字面量。</p>
+
+	<script type="text/javascript">
+		let theader="Templates Literals";
+		let tags=["templates literals","javaScript","es6"];
+		let thtml=`<h2>${theader}</h2><ul>`;
+		for(const x of tags){
+			thtml+=`<li>${x}</li>`;
+		}
+		thtml+=`</ul>`;
+		document.getElementById("demo").innerHTML=thtml;
+	</script>
+</body>
+</html>
